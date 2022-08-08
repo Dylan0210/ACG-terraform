@@ -79,11 +79,13 @@ variable "db_name" {
 variable "username" {
   description = "Username for the DB user"
   type        = string
+  sensitive   = true
   default     = "admin"
 }
 
 variable "password" {
   description = "Password for the DB user"
   type        = string
+  sensitive   = true
   default     = "admin123"
 }
